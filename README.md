@@ -1,4 +1,4 @@
-**3D Volatility Surface Construction for SPX American Options
+****3D Volatility Surface Construction for SPX American Options**
 **This project constructs and analyzes a 3D volatility surface for SPX American options during the 2024 U.S. presidential election period (October 28 to November 8, 2024). It leverages real market data, Monte Carlo simulations, and advanced stochastic models to enhance option pricing accuracy and risk assessment.
 
 Project Highlights
