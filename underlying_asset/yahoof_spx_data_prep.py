@@ -30,20 +30,20 @@ spx_data = spx_data.drop(0)
 spx_data = spx_data.drop(index=1).reset_index(drop=True)
 spx_data = spx_data.rename(columns={'Price': 'Datetime'})
 
-# Step 3: Ensure numeric columns are correctly parsed
+# Ensure numeric columns are correctly parsed
 numeric_columns = ['Adj Close', 'Close', 'High', 'Low', 'Open', 'Volume']
 spx_data[numeric_columns] = spx_data[numeric_columns].apply(pd.to_numeric, errors='coerce')
 
-# Step 4: Convert "Datetime" column to a proper datetime object
+# Convert "Datetime" column to a proper datetime object
 spx_data['Datetime'] = pd.to_datetime(spx_data['Datetime'])
 
 spx_data.set_index('Datetime', inplace=True)
 # Display the cleaned dataset
 
-# # Sort index from oldest to newest
+# Sort index from oldest to newest
 df = spx_data.sort_index()
 
-# # Save the cleaned data for future reference
+# Save the cleaned data for future reference
 df.to_csv("spx_historical_data.csv", index=True)
 print("Cleaned 5-minute data saved to spx_historical_data.csv")
 
