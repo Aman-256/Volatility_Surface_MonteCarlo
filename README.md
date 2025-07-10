@@ -33,16 +33,27 @@ Project Structure
 
 
 ├── data/
-│   └── spx_historical_data.csv          # 5-min SPX price data
-│   └── real_option_data.csv             # Real option chain (strike, expiry, prices)
+
+│└── spx_historical_data.csv          # 5-min SPX price data
+
+│└── real_option_data.csv             # Real option chain (strike, expiry, prices)
+
 ├── simulated_price_paths.csv            # Simulated SPX price paths
+
 ├── implied_volatilities.csv             # Raw implied volatility data
+
 ├── implied_volatilities_final_cleaned.csv
+
 ├── monte_carlo_simulation.py            # GBM-based price simulation
+
 ├── heston_simulation.py                 # Heston model implementation
+
 ├── cgmy_simulation.py                   # CGMY jump diffusion model
+
 ├── black_scholes.py                     # Black-Scholes option pricing
+
 ├── calculate_implied_volatility.py      # Newton-Raphson IV calculation
+
 └── README.md                            # You're here!
 
 Visualization
